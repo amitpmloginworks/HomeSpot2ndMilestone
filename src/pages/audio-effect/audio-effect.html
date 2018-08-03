@@ -1,0 +1,55 @@
+<!--
+  Generated template for the AudioEffectPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton>
+      <ion-buttons left (click)="moveToLRReceiver()">
+          <button ion-button icon-only >
+            <ion-icon item-start>  <img item-left width="15" src="assets/imgs/left-arrow-angle.png" ></ion-icon>
+          </button>
+        </ion-buttons>
+        
+      
+        <ion-buttons right (click)="saveEQ()" >
+            <button ion-button icon-only >
+              <ion-icon item-end>  <img item-right  width="25" src="assets/imgs/Group.png" ></ion-icon>
+            </button>
+          </ion-buttons>
+    <ion-title>Audio Effect</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+<ion-list no-lines >
+  <ion-item (click)="eqOptions()" >
+      <ion-label>Pop <br> <p style="font-size:1.4rem;color:#4c5c69" >Customized</p></ion-label>
+      <img style="height:20px" item-right src="assets/icon/right-arrow-angle.png">
+  </ion-item>
+</ion-list>
+
+<!-- <ion-card style="box-shadow: none;margin-top: 33%;">
+
+  </ion-card> -->
+  <canvas style="margin-left:3%" #lineCanvas ></canvas>  
+  <hr style="background: #3c4955;">
+
+    <!-- <canvas  #lineCanvas ></canvas> -->
+
+
+<ion-list>
+    <ion-item>
+        <ion-label>Base Boost</ion-label>
+        <ion-toggle mode="ios" ></ion-toggle>
+    </ion-item>
+      <ion-item>
+          <ion-label>3D Enhancement</ion-label>
+          <ion-toggle mode="ios" ></ion-toggle>
+      </ion-item>
+    </ion-list>
+</ion-content>

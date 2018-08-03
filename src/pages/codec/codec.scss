@@ -1,0 +1,153 @@
+page-codec {
+.title{
+    text-align: center;
+    margin-top: -26px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffff;
+    margin-left: 20px;
+
+}
+.toolbar-title-ios{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.toolbar-title-md{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.toolbar-background-md{
+    background-color: #70B020;
+}
+.toolbar-background-ios{
+    background-color: #70B020;
+}
+
+.content-md{
+    background-color: #70B020;
+}
+.content-ios{
+    background-color: #70B020;
+}
+.item-ios{
+    background-color:#70B020;
+    border-top:0px;
+    height: 60px;
+    border-bottom: 0.5px solid #c8c7cc; 
+   
+}
+.item-md{
+    background-color:#70B020;
+    border-top:0px;
+    height: 60px;
+    border-bottom: 0.5px solid #c8c7cc; 
+}
+.para{
+    color:#ffff;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.toggle-ios .toggle-icon {
+    margin-left: 0px;
+}
+.toggle-md .toggle-icon {
+    margin-left: 0px;
+}
+.last-para{
+   // color: rgb(187, 224, 130) ;
+   color: #A8CF78;
+    text-align:center;
+    font-size:1.4rem;
+    font-weight: 100;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top:0px;
+
+}
+
+.item-block:first-child {
+     border-top: -10px solid #c8c7cc; 
+} 
+.list-ios[no-lines] ion-list-header, 
+.list-ios[no-lines] ion-item-options,
+ .list-ios[no-lines] .item, .list-ios[no-lines]
+  .item .item-inner {
+    border-bottom: 0.1px solid  rgb(151, 188, 94) ; 
+    //#c8c7cc
+}
+.list-md[no-lines] ion-list-header, 
+.list-md[no-lines] ion-item-options,
+ .list-md[no-lines] .item, .list-md[no-lines]
+  .item .item-inner {
+    border-bottom: 0.1px solid rgb(151, 188, 94) ;
+}
+.img{
+    width: 18px;
+    margin-left: 15px   
+}
+// img{
+//     margin-left: 10px;
+//     max-width: 8%;
+// }
+.toolbar-title-md {
+    text-align: center ! important;
+    padding-top:35px  ! important;
+    margin-left: -25px;
+    margin-top: -8px;
+    color:white;
+}
+.toolbar-title-ios {
+    text-align: center ! important;
+    padding-top:54px  ! important;;
+    margin-left: -25px;
+    margin-top: -8px;
+    color:white;
+}
+img{
+    max-width: 170%;
+   
+}
+// .toggle-ios {
+//     right: 13px;
+//     border:1px solid white;
+// }
+// .toggle-md {
+//     right: 13px;
+//     border:1px solid white;
+// }
+
+.toggle-ios .toggle-icon {
+    border: 1px solid white;
+}
+.toggle-md .toggle-icon {
+    border: 1px solid white;
+}
+.toggle-ios .toggle-icon::before {
+    top:0px ! important;
+    bottom:0px ! important;
+    right:0px ! important;
+    left:0px ! important;
+}
+.toggle-md .toggle-icon::before {
+    top:0px ! important;
+    bottom:0px ! important;
+    right:! important;
+    left:! important;
+}
+.toggle-ios {
+
+    height: 27px;
+}
+.toggle-md {
+
+    height: 27px;
+}
+
+.toggle-ios .toggle-inner{
+    width:19px;
+}
+.toggle-md .toggle-inner{
+    width:19px;
+}
+}
+

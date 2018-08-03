@@ -1,0 +1,63 @@
+<!--
+  Generated template for the ProductRegistrationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar hideBackButton >
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title>Product Registration</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+
+
+
+
+<ion-content no-padding  no-bounce>
+      <ion-list no-lines>
+
+         <ion-item>
+          <p class="para" style="color:#768490;font-weight: 300">Device:</p>
+           <p style="color:white">Long Range Bluetooth Receiver</p>
+        </ion-item>
+         <ion-item>
+          <ion-label style="color:#768490;font-weight: 300">Amazon order:</ion-label>
+          <ion-label  style="color:white; margin-left:-55px;" class="label-style" >841-4729384-1231</ion-label>
+        </ion-item>
+    
+        <div>
+            <ion-label style="color:#768490;font-weight: 300">Purchase from Amazon:</ion-label>
+            <div style="display:inline;margin-left: 12px;">
+           <button style="background-color:#768490;  border: none;border-radius:10px;" ion-button>US</button>
+           <button ion-button>CA</button>
+           <button ion-button>FR</button>
+           <button ion-button>UK</button>
+           <button ion-button>DE</button>
+          </div>
+            </div>
+            
+            <ion-item style="border-top: 0.1px solid #4c5c69;margin-top:15px;" (click)='selectDate()'>
+                <p  class="para" style="color:#768490;font-weight: 300">Date of Purchase:</p>
+                <p style="color:white">March 2017</p>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed  style="color:#768490">First name:</ion-label>
+                <ion-input type="text" value=""  placeholder="Name"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label fixed  style="color:#768490">Last name:</ion-label>
+                  <ion-input  type="text"  placeholder="Name" ></ion-input>
+                </ion-item>
+              <ion-item>
+                <ion-label fixed  style="color:#768490;margin-right:-31px">Email:</ion-label>
+                <ion-input  type="email" placeholder="user@gmail.com" ></ion-input>
+              </ion-item>
+           </ion-list>
+       <button ion-button full class="btn-send">Send</button>
+      
+        </ion-content>

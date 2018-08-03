@@ -1,0 +1,106 @@
+page-connection {
+
+         .toolbar-background-md{
+            background-color: #70AF20;
+        }
+        .toolbar-background-ios{
+            background-color: #70AF20;
+        }
+    .toolbar-title-md{
+        text-align: center;
+        padding: 0px;
+        margin-top:0px;
+        color:white;
+        font-weight: 400;
+        margin-left:-20px;
+        font-size:2rem;
+    }
+    .toolbar-title-ios{
+        text-align: center;
+        padding: 0px;
+        margin-top:0px;
+        color:white;
+        font-weight: 400;
+        font-size:2rem;
+    }
+    .content-md{
+        background-color: #70AF20;
+    }
+    .content-ios{
+        background-color: #70AF20;
+    }
+    .item-md{
+        background-color: #70AF20;
+        height:65px;
+        margin-bottom: 2px;
+    }
+    .item-ios{
+        background-color: #70AF20;
+       height:65px;
+        margin-bottom: 2px;
+    }
+    .para-item{
+    color:white;
+    font: size 1.8rem ! important;
+    font-weight: 300;
+    }
+    
+    .list-ios[no-lines] ion-list-header, 
+    .list-ios[no-lines] ion-item-options,
+     .list-ios[no-lines] .item, .list-ios[no-lines]
+      .item .item-inner {
+        border-bottom: 0.1px solid rgb(151, 188, 94) 
+    }
+    .list-md[no-lines] ion-list-header, 
+    .list-md[no-lines] ion-item-options,
+     .list-md[no-lines] .item, .list-md[no-lines]
+      .item .item-inner {
+        border-bottom: 0.1px solid rgb(151, 188, 94) 
+    }
+    .label{
+        font-size:1.8rem;
+        font-weight: 300;
+    }
+    .item-md p {
+        font-size:1.8rem;
+        font-weight: 300;
+    }
+    .item-ios p{
+        font-size:1.8rem;
+        font-weight: 300;   
+    }
+    .toggle-ios .toggle-icon {
+        border: 1px solid white;
+    }
+    .toggle-md .toggle-icon {
+        border: 1px solid white;
+    }
+    .toggle-ios .toggle-icon::before {
+        top:0px ! important;
+        bottom:0px ! important;
+        right:0px ! important;
+        left:0px ! important;
+    }
+    .toggle-md .toggle-icon::before {
+        top:0px ! important;
+        bottom:0px ! important;
+        right:! important;
+        left:! important;
+    }
+    .toggle-ios {
+    
+        height: 27px;
+    }
+    .toggle-md {
+    
+        height: 27px;
+    }
+    .toggle-ios .toggle-inner{
+        width:19px;
+    }
+    .toggle-md .toggle-inner{
+        width:19px;
+    }
+    }
+    
+

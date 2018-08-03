@@ -1,0 +1,61 @@
+
+
+
+<ion-menu  id="authenticated" side="left"   [content]="content" >
+  
+    <ion-content style=" background-color: #70AF20;" >
+      <img style="  display: block; margin-left: auto;margin-right: auto; width: 25%;margin-top:26%" src="assets/imgs/HomeSpot-logo.png">
+    
+      <p style="color:white;text-align:center;font-size:2rem;padding-top:10px;">HomeSpot </p>
+  
+      <ion-list no-lines style=" border-bottom: 0.1px solid #c8c7cc;padding-top:25px; ">
+          <ion-item menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px;  border-bottom: 0.1px solid #97bc5e;" (click)="moveToDiscover()">
+            
+              <ion-label class="label-style" >Discover and Link </ion-label>
+          </ion-item>
+          <ion-item  menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; "  (click)="moveToProductRegistration()" >
+              <ion-label class="label-style" >Product Registration</ion-label>
+          </ion-item>
+          <ion-item menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; " (click) = "openInBrowser()" >
+              <ion-label class="label-style" >Product help </ion-label>
+          </ion-item>
+          <ion-item menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; "  (click)="moveToFeatureRequest()" >
+              <ion-label class="label-style" >Feature request </ion-label>
+          </ion-item>
+          <ion-item  menuClose="left" style="background-color:#70AF20; border-top:0px; height: 50px; border-bottom: 0.1px solid #97bc5e; "  (click)="moveToContactUs()">
+              <ion-label class="label-style" >Contact us </ion-label>
+          </ion-item>
+      </ion-list>
+    
+        <p style="color:rgb(187, 224, 130);text-align:center;font-size:1.4rem;font-weight:50; padding-top:20%">App Version 1.0</p>
+   
+    </ion-content>
+  
+  </ion-menu>
+
+  <ion-menu id="unauthenticated" side="right" [content]="content" id="menu2" class="menu-style" >
+
+  
+    
+      <ion-content no-padding style=" background-color: #37434F; ">
+
+        <ion-list  no-lines style=" border-bottom: 0.1px solid #c8c7cc;margin-top: 64%;margin-left:0% ">
+            <ion-item menuClose="right" style="background-color:#37434F; border-top:0px; height: 50px;  border-bottom: 0.1px solid #4c5c69;" (click)="moveToCustomization()">         
+              <ion-label class="label-style" >Customization </ion-label>
+          </ion-item>
+          <ion-item  menuClose="right" style="background-color:#37434F; border-top:0px; height: 50px; border-bottom: 0.1px solid #4c5c69; "  (click)="moveToDeviceList()" >
+              <ion-label class="label-style" >Device List</ion-label>
+          </ion-item>
+
+          <ion-item  menuClose="right" style="background-color:#37434F; border-top:0px; height: 50px; border-bottom: 0.1px solid #4c5c69; "  (click)="moveToAudioEffect()" >
+            <ion-label class="label-style" >Audio Effect</ion-label>
+        </ion-item>
+         
+        </ion-list>  
+     
+      </ion-content>
+    
+    </ion-menu>
+  
+ 
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,81 @@
+page-device-list {
+    .content-md{
+        background-color: #37434E;
+    }
+    .content-ios{
+        background-color: #37434E;
+    }
+    .item-ios{
+        background-color:#37434E;
+        height:60px;
+        margin-bottom: 2px;
+    }
+    .item-md{
+        background-color:#37434E;
+        height:60px;
+        margin-bottom: 2px;
+    
+    }
+    .button-ios {
+        position: absolute;
+
+        border-radius: 15px;
+        margin-top:80%;
+        height:4.5rem;
+        text-transform: none;
+        width: 88%;
+        margin-left: 6%;
+        font-size:2rem;
+    }
+    .button-md {
+        position: absolute;
+        border-radius: 15px;
+        text-transform: none;
+        width: 88%;
+        height:4.5rem;
+        margin-left: 6%;
+        font-size:2rem;
+        bottom: 5%;
+    
+    }
+    .toolbar-background-md{
+        background-color: #37434E;
+    }
+    .toolbar-background-ios{
+        background-color: #37434E;
+    }
+    .toolbar-title-ios{
+        color:white;
+        font-weight:300;
+        font-size: 2rem;
+        text-align: center;
+        margin-left:-5px;
+    }
+    .toolbar-title-md{
+        font-size: 2rem;
+        font-weight:300;
+        text-align: center;
+        color:white;
+        margin-left:20px;
+    }
+    .list-ios[no-lines] ion-list-header, 
+.list-ios[no-lines] ion-item-options,
+ .list-ios[no-lines] .item, .list-ios[no-lines]
+  .item .item-inner {
+
+  border-bottom: 0.1px solid #4c5c69 ;
+}
+.list-md[no-lines] ion-list-header, 
+.list-md[no-lines] ion-item-options,
+ .list-md[no-lines] .item, .list-md[no-lines]
+  .item .item-inner {
+
+    border-bottom: 0.1px solid #4c5c69 ;
+}
+.label{
+    color:white;
+}
+img{
+    margin-right: 15px;
+}
+}

@@ -1,0 +1,78 @@
+<!--
+   Generated template for the LrReceiverPage page.
+   
+   See http://ionicframework.com/docs/components/#navigation for more info on
+   Ionic pages and navigation.
+   -->
+<ion-header>
+   <ion-navbar hideBackButton>
+      <ion-buttons left (click)="moveToHome()">
+         <button ion-button icon-only >
+            <ion-icon item-start>  <img item-left width="15" src="assets/imgs/left-arrow-angle.png" ></ion-icon>
+         </button>
+      </ion-buttons>
+      <ion-title class="title-style" >LR Receiver </ion-title>
+      <div class="signal-style" >
+         <div class="inner-signal_style">
+            <img  *ngIf="signalBarOne==1" class="bar-style1" src="assets/imgs/signalbar1.png">
+            <img *ngIf="signalBarTwo==1"  class="bar-style2" src="assets/imgs/signalbar2.png">
+            <img *ngIf="signalBarThree==1"  class="bar-style3" src="assets/imgs/signalbar3.png">
+            <img *ngIf="signalBarFour==1"  class="bar-style4" src="assets/imgs/signalbar4.png">
+            <img *ngIf="signalBarFive==1"  class="bar-style5" src="assets/imgs/signalbar5.png">
+            <img  *ngIf="signalBarOne==0" class="bar-style1" src="assets/imgs/signalbaroff1.png">
+            <img *ngIf="signalBarTwo==0"  class="bar-style2" src="assets/imgs/signalbaroff2.png">
+            <img *ngIf="signalBarThree==0"  class="bar-style3" src="assets/imgs/signalbaroff3.png">
+            <img *ngIf="signalBarFour==0"  class="bar-style4" src="assets/imgs/signalbaroff4.png">
+            <img *ngIf="signalBarFive==0"  class="bar-style5" src="assets/imgs/signalbaroff5.png">
+         </div>
+      </div>
+      <ion-buttons  right>
+         <button ion-button  menuToggle="right" icon-only >
+            <ion-icon item-end>  <img  width="25" item-right  src="assets/imgs/settings.png" ></ion-icon>
+         </button>
+      </ion-buttons>
+   </ion-navbar>
+</ion-header>
+<ion-content padding >
+   <div style="position:relative;text-align: center;">
+      <img class="center" src="assets/icon/effect (1).png">
+      <div class="aptx-div">
+         <img *ngIf="codecStateAptxll==1"  class="img-aptx" src="assets/icon/aptxll-logo.png">
+         <img *ngIf="codecStateAptx==1"  class="img-aptx" src="assets/imgs/aptx-logo.png">
+      </div>
+   </div>
+   <div id="middle" style="display:block;width:100%;float:left;padding-left:20px;margin-top: -30px;">
+      <div style='display:inline-block;width:30%;float:left;text-align:left'>
+         <p *ngIf="on==1" style="color:#768490">Sync on</p>
+         <p *ngIf="on==0" style="color:#768490">Sync off</p>
+         <img *ngIf="on==1"  width="30" (click)="syncOnOff(0)" style="margin-left:15px;" src="assets/imgs/restart.png">
+         <img *ngIf="on==0"  width="30"  (click)="syncOnOff(1)" style="margin-left:15px;" src="assets/imgs/sync-off.png">
+      </div>
+      <div style='display:inline-block;width:40%;float:left;text-align:center;padding-top:3px;'>
+         <ion-label style="color:#768490">Connected To</ion-label>
+         <ion-label class="text-style" style="margin-top:20px;margin-left:-9px;font-size:1.6rem;" (click)="moveToDeviceList()" >{{devicename}}<img style="margin-top:2px;margin-left:8px;position:absolute" item-left src="assets/icon/angle-arrow-down (1).png"></ion-label>
+      </div>
+      <div style='display:inline-block;width:28%;float:left;text-align:right;margin-left: -14px;margin-top:5px'>
+         <ion-label style="padding-left: 14px;color:#768490">EQ</ion-label>
+         <img  width="25" style="margin-left:11px;" (click)="moveToAudioEffect()" src="assets/imgs/equiliser.png">
+      </div>
+   </div>
+   <div id="last" class="div-parent" style="margin-top:70px;" >
+      <div style="background-color: #70AF20;height:12%;padding-bottom:10px;padding-top:10px;border-radius:10px 10px 0px 0px;margin-top:5%;width:96%;border-bottom:1px solid #88be46 ">
+         <ion-range min="0" max="1000" [(ngModel)]="volume" pin="true" (ionBlur)="volumeSliderTouchDown()"  (ionChange)="changeRange($event.value)" step="50"  debounce="100" >
+         <ion-icon range-left small name="volume-mute"></ion-icon>
+         <ion-icon range-right name="volume-up"></ion-icon>
+         </ion-range>
+      </div>
+   </div>
+   <div class="div-parent">
+      <div style="background-color: #70AF20;height:12%;border-radius:0px 0px 10px 10px;margin-top:1px;width:96%;padding-bottom:20px;padding-top:10px">
+         <img width="35" src="assets/icon/backward.png" (click)="previous()">
+         <img *ngIf="isPlaying==0" width="35" class="player-button"  src="assets/icon/play-button.png" (click)="playState(1)">
+         <img  *ngIf="isPlaying==1" width="35" class="player-button"  src="assets/icon/pause-button.png" (click)="playState(0)">
+         <img width="35" class="forward-button" src="assets/icon/fast-forward.png" (click)="next()">    
+  
+        </div>
+   </div>
+   <p></p>
+</ion-content>

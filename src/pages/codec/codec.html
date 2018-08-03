@@ -1,0 +1,42 @@
+<!--
+   Generated template for the CodecPage page.
+   
+   See http://ionicframework.com/docs/components/#navigation for more info on
+   Ionic pages and navigation.
+   -->
+   <ion-header>
+    <ion-navbar hideBackButton>
+       <ion-title>Codec</ion-title>
+       <ion-buttons left (click)="moveTocustomization()">
+          <button ion-button icon-only >
+             <ion-icon item-start>  <img item-left width="15"  src="assets/imgs/left-arrow.png" ></ion-icon>
+          </button>
+       </ion-buttons>
+    </ion-navbar>
+ </ion-header>
+ 
+ <ion-content no-padding >
+    <ion-list no-lines style="padding-top:10px;" >
+       <ion-item>
+          <ion-label class="para" >SBC </ion-label>
+          <ion-toggle checked="true"  disabled="true" mode="ios"></ion-toggle>
+       </ion-item>
+       <ion-item >
+          <ion-label class="para" >AAC </ion-label>
+          <ion-toggle  (ngModelChange)="updateCodec(1)"   [(ngModel)]="codecAac" mode="ios"></ion-toggle>
+       </ion-item>
+       <ion-item>
+          <ion-label class="para" >AptX </ion-label>
+          <ion-toggle (ngModelChange)="updateCodec(2)"   [(ngModel)]="codecAptX"   mode="ios"></ion-toggle>
+       </ion-item>
+       <ion-item>
+          <ion-label class="para" >AptX-LL </ion-label>
+          <ion-toggle  (ngModelChange)="updateCodec(3)"    [(ngModel)]="codecAptXLL"  mode="ios"></ion-toggle>
+       </ion-item>
+       <ion-item>
+          <ion-label class="para" >AptX-HD</ion-label>
+          <ion-toggle  (ngModelChange)="updateCodec(4)" [(ngModel)]="codecAptXHD"  mode="ios"></ion-toggle>
+       </ion-item>
+    </ion-list>
+    <p class="last-para" text-center>Enable AptX-LL only when the source device supports this codec</p>
+ </ion-content>

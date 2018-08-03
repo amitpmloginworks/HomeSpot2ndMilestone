@@ -1,0 +1,166 @@
+page-feature-request {
+  
+        .toolbar-background-md{
+            background-color: #37434F;
+        }
+        .toolbar-background-ios{
+            background-color: #37434F;
+        }
+    .toolbar-title-md{
+        text-align: center;
+        padding: 0px;
+        margin-top:5px;
+        margin-left: -15px;
+        color:white;
+        font-weight: 400;
+    }
+    .toolbar-title-ios{
+        text-align: center;
+        padding: 0px;
+        margin-top:0px;
+        margin-left: 13px;
+        color:white;
+        font-weight: 400;
+    }
+    .bar-button-menutoggle-md ion-icon {
+
+      color: #74828E;
+         font-size: 3rem;
+  
+    }
+    .bar-button-menutoggle-ios ion-icon {
+    
+        color:#74828E;
+    
+    }
+     .label-md{
+       color:#4c5c69;
+     font-size: 1.8rem;
+     margin-left:20px
+     }
+
+     .label-ios{
+        margin-left:20px;
+        color:#4c5c69;
+         font-size: 1.8rem; 
+         }
+        .list-md{
+            margin-right: -28px;
+            margin-left: 0px;
+        }
+        .list-ios{
+            margin-right: -28px;
+            margin-left: 0px;
+            
+        }
+        .item-md{
+            background-color: #37434F;
+            margin-left: -14px;
+            margin-bottom: 2px;
+            height:60px;
+            
+        }
+        .item-ios{
+            background-color: #37434F;
+            margin-left: -14px;
+            margin-bottom: 2px;
+            height:60px;
+            
+        }
+      
+        .content-md{
+            background-color: #37434F;
+           
+        }
+        .content-ios{
+            background-color: #37434F;
+        }
+        
+       
+        .label-md{
+            margin-top:10px;
+            
+        }
+        .label-ios{
+            margin-top:10px;
+          
+        }
+        
+        .button-ios {
+            background-color:#70AF20;
+            border-radius: 15px;
+          margin-top: 48%;
+            height:4.5rem;
+            text-transform: none;
+            width: 88%;
+            margin-left: 6%;
+            font-size:2rem;
+        }
+    
+
+
+        .button-md{
+           // position:fixed;
+           background-color:#70AF20;
+           //margin-top:70%;
+           margin-top: 48%;
+           width: 88%;
+           border-radius: 15px;
+           margin-left: 6%;
+           font-size:2rem;
+           text-transform: none;
+           height:4.5rem;
+
+
+        }
+        .list-ios[no-lines] ion-list-header, 
+.list-ios[no-lines] ion-item-options,
+ .list-ios[no-lines] .item, .list-ios[no-lines]
+  .item .item-inner {
+    border-bottom: 0.1px solid #4c5c69 ;
+}
+.list-md[no-lines] ion-list-header, 
+.list-md[no-lines] ion-item-options,
+ .list-md[no-lines] .item, .list-md[no-lines]
+  .item .item-inner {
+    border-bottom: 0.1px solid #4c5c69 ;
+}
+
+.text-input::-webkit-input-placeholder {
+    color: white;
+    padding-left: 0px
+  }
+  .text-input-md {
+    margin-left: -51px;
+    color:white;
+}
+.text-input-ios {
+  margin-left: -53px ! important;
+  color:white;
+}
+.text-input-md {
+       
+    @media  screen and (min-width: 600px) and (max-width: 1500px)
+{
+    margin-left: -35px ! important;
+}
+}
+.list-md .item-input:last-child {
+    border-bottom: 0.1px solid #4c5c69;
+}
+.list-ios .item-input:last-child {
+    border-bottom: 1px solid #4c5c69;
+}
+.list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+    border-bottom: 0.1px solid #4c5c69;}
+
+
+  .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom: 0.1px solid #4c5c69; }
+
+    ion-navbar[hidebackbutton] button[menutoggle] {
+        display: block !important;
+      }
+    }
+    
+

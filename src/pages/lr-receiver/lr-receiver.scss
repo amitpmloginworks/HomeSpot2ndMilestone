@@ -1,0 +1,273 @@
+page-lr-receiver {
+
+    .bar-style1{
+        height: 19px; 
+        margin-bottom: 1px;
+        margin-right: -16px;
+    }
+    .bar-style2{
+        height: 24px;
+       
+        margin-bottom: 1px;
+        margin-right: -6px;
+    }
+    .bar-style3{
+        height: 27px;
+        margin-left: 3px;
+        margin-bottom: 1px;
+        margin-right: -3px;
+    }
+    .bar-style4{
+        height: 30px;
+        margin-left: 1px;
+        margin-bottom: 1px;
+    }
+    .bar-style5{
+        height: 32px;
+        margin-left: -2px;
+        margin-bottom: 1px;
+    }
+.signal-style
+{
+    height: 43px;
+    width: 78%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: flex-end;  
+}
+.inner-signal_style
+{
+    height: 42px;
+    width: 30%;
+    margin-top: 8px;
+}
+    .bar-style{
+       
+        @media  screen and (min-width: 600px) and (max-width: 700px)
+{
+    position: absolute;
+    left: 388px;
+}
+    }
+    .bar-style{
+       
+        @media  screen and (min-width: 700px) and (max-width: 1500px)
+{
+    position: absolute;
+    left: 435px;
+}
+    }
+    .title-style{
+       
+        @media  screen and (min-width: 700px) and (max-width: 1500px)
+{
+    margin-left: -2px ! important;
+    }
+    }
+    .title-style{
+       
+        @media  screen and (min-width: 600px) and (max-width: 700px)
+{
+    margin-left: -50px ! important;
+    }
+    }
+    .player-button{
+       
+        @media  screen and (min-width: 600px) and (max-width: 1500px)
+{
+margin-left:24% ! important;
+}
+    }
+
+    .forward-button{
+       
+        @media  screen and (min-width: 600px) and (max-width: 1500px)
+{
+margin-left:22% ! important;
+}
+    }
+
+
+    .text-style{
+       
+        @media  screen and (min-width: 600px) and (max-width: 1500px)
+{
+    margin-top: 23px ! important;
+}
+    }
+    .center-circle{
+        height: 453px;
+        margin-left:5px;
+        margin-top: -70px;
+        z-index: -1;
+       position:relative
+    }
+    .bg{
+        background-image: url('../assets/imgs/effect.png');
+        background-repeat: no-repeat;
+      
+    }
+        
+    
+    .toolbar-background-md{
+        background-color: #36434e;
+    }
+    .toolbar-background-ios{
+        background-color: #36434e;
+    }
+.toolbar-title-md{
+    text-align: center;
+    padding: 0px;
+    margin-top:0px;
+  margin-left: 15px;
+    color:white;
+    font-weight: 400;
+}
+.toolbar-title-ios{
+    text-align: center;
+    padding: 0px;
+    margin-top:0px;
+    margin-left: 0px;
+    color:white;
+    font-weight: 400;
+}
+.content-md{ 
+   background-color:#36434e;
+}
+.content-ios{
+    background-color: #36434e;
+}
+.center {
+    margin-top: -65px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+div img{ display: inline-block;
+         margin-left:16%;
+         margin-top:5%;      
+
+}
+ion-icon[small] {
+  
+    color: 80a54f;
+    min-height: 0.1em;
+    font-size: 2em;
+    color: #5C8D23;
+}
+.ion-md-volume-up:before {
+   
+    color: #5C8D23;
+}
+.ion-ios-volume-up:before {
+   
+    color: #5C8D23;
+}
+.div-parent{
+    display:flex;
+    justify-content: center;
+    
+}
+.range-md .range-slider {
+    margin-left:10px;
+    margin-right: 10px;
+}
+.range-ios .range-slider {
+    margin-left:10px;
+    margin-right: 10px;
+}
+.range-md [range-left] {
+    padding-left: 10px;
+
+    
+}
+.range-ios [range-left] {
+    padding-left: 10px;
+
+}
+.range-md [range-right] {
+    padding-left: 7px;
+    padding-top:1px;
+
+    
+    margin-right: 10px;
+}
+.range-ios [range-right] {
+    padding-left: 7px;
+    
+    padding-top:1px;
+    margin-right: 10px;
+}
+.range-md .range-knob {
+    background: #E8E8E8;
+}
+.range-ios .range-knob {
+    background-color: #E8E8E8;
+}
+
+
+ion-navbar[hidebackbutton] button[menutoggle] {
+    display: block !important;
+  }
+  .aptx-div{
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    top: 227px;
+  }
+
+  .img-aptx
+  {
+    height: 17px;
+    margin-left: 0px;
+  }
+
+  .center{
+       
+    @media  screen and (min-height: 800px) and (max-height: 1200px)
+{
+    margin-top: -10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+  }
+
+  #middle{
+       
+    @media  screen and (min-height: 800px) and (max-height: 1200px)
+{
+    margin-top: -10px ! important;
+    
+}
+  }
+  #last{
+       
+    @media  screen and (min-height: 800px) 
+{
+    margin-top: 130px ! important;
+    
+}
+  }
+  .inner-signal_style{
+       
+    @media  screen and (min-height: 800px) 
+{
+    margin-top:2px ! important;
+    
+}
+  }
+  .bar-style2 {
+       
+    @media  screen and (min-height: 800px)
+{
+    margin-right:-4px ! important;
+    
+}
+      
+  }
+}

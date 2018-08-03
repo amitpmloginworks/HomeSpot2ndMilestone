@@ -1,0 +1,38 @@
+<!--
+  Generated template for the TimeoutsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar hideBackButton>
+       
+        <ion-buttons left (click)="moveToConnection()">
+          <button ion-button icon-only >
+            <ion-icon item-start>  <img item-left width="15"  src="assets/imgs/left-arrow.png" ></ion-icon>
+          </button>
+        </ion-buttons>
+      <ion-title>Timeouts</ion-title>
+    </ion-navbar>  
+  </ion-header>
+
+<ion-content no-padding>
+    
+    <ion-list no-lines style="padding-top:10px;" >
+        <ion-item (click)="setTimeout()">
+            <ion-label class="para" style="color:white">Pairing Timeout </ion-label>    
+            <ion-input type="number" item-right  [(ngModel)] = "pairingTime"  value="pairingTime"  (keyup.enter)="pairingTimeout(pairingTime)" placeholder="600s"></ion-input>   
+        </ion-item>
+ 
+        <ion-item>
+            <ion-label class="para" style="color:white">Link Loss Timeout </ion-label>
+            <ion-input type="number" item-right  [(ngModel)] = "linkLoss"  value="linkLoss"   (keyup.enter)="linkLossTimeout(linkLoss)" placeholder="60s"></ion-input>   
+        </ion-item>
+
+        <ion-item >
+            <ion-label class="para" style="color:white" >Connectable Timeout </ion-label> 
+           <ion-input type="number" item-right  [(ngModel)] = "connectTime"  value="connectTime" placeholder="6000s"   (keyup.enter)="connectableTimeout(connectTime)"></ion-input>         
+        </ion-item>
+    </ion-list>
+</ion-content>

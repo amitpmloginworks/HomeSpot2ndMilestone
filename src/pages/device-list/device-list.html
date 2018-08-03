@@ -1,0 +1,34 @@
+<!--
+   Generated template for the DeviceListPage page.
+   
+   See http://ionicframework.com/docs/components/#navigation for more info on
+   Ionic pages and navigation.
+   -->
+   <ion-header>
+        <ion-navbar>
+           <ion-title>Device List</ion-title>
+           <ion-buttons end (click)="goBack()">
+              <div > 
+                 <img style="width:20px;" src="assets/imgs/cancel.png" >
+              </div>
+           </ion-buttons>
+        </ion-navbar>
+     </ion-header>
+
+     <ion-content no-padding>
+
+        <ion-list no-lines  *ngFor="let pdlRec of pdlRecs" #item>
+
+           <ion-item  no-lines (click)="selectOptions(item, pdlRec)">
+              <img item-left width="30" *ngIf="pdlRec.isMusicConnected"  src="assets/imgs/call-music.png">
+              <img item-left width="30" *ngIf="pdlRec.isPhoneProvisioned"  src="assets/imgs/phonecall.png">
+              <h2>{{pdlRec.remoteDevName}}</h2>
+              <h4>{{pdlRec.addr}}</h4>
+              <img item-right  width="30"  *ngIf="pdlRec.isMusicConnected"  src="assets/imgs/Link-icon.png"  >
+           </ion-item>
+           
+        </ion-list>
+        <button ion-button (click)="pairingButtonPressed($event)" color="{{pairingButtonColor}}" >Pair new</button>
+        <p></p>
+        <p></p>
+     </ion-content>

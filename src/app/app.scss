@@ -1,0 +1,102 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.label-style{
+    color:#ffff;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.label{
+    color:white;
+}
+// .split {
+//     height: 100%;
+//     width: 50%;
+//     position: fixed;
+//     z-index: 1;
+//     top: 0;
+//     overflow-x: hidden;
+//     padding-top: 20px;
+  
+// }
+
+// .left {
+//     left: 0;
+//     width:25%;
+//     background-color: #37434F;
+//    // border: 1px solid;
+//     // box-shadow:  10px 10px 10px black;
+     
+   
+// }
+
+// .right {
+//     right: 0;
+//     width:75%;
+//     background-color: #37434F;
+// }
+
+// .centered {
+//     position: absolute;
+//     top: 45%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+   
+// }
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+.unlink-btn{
+color:white;
+border-color:#4c5c69;
+margin-top: 30%;
+text-transform: none;
+height: 4.6rem;
+border-radius: 10px;
+}
+
+// .menu-style .menu-inner {
+//     width: 100%
+// }  
+// .vl {
+//    // border-left: 2px solid #4c5c69;
+//     height: 100%;
+//     position: absolute;
+//     left: 0%;
+//     padding:10px;
+//    // border: 1px solid;
+//     box-shadow: 0px 10px 30px black;
+//     display:block;
+//     top: 0;
+    
+// }  
+
+.image{
+    margin-top:40%;
+    margin-bottom:40%;
+}
+.arrow-style{
+   
+    @media  screen and (min-width: 600px) and (max-width: 1500px)
+{
+    margin-top: 13% ! important;
+}
+}

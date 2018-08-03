@@ -1,0 +1,49 @@
+<!--
+   Generated template for the CustomizationPage page.
+   
+   See http://ionicframework.com/docs/components/#navigation for more info on
+   Ionic pages and navigation.
+   -->
+   <ion-header>
+      <ion-navbar hideBackButton>
+         <ion-buttons left (click)="goToLRReceiver()">
+            <button ion-button icon-only >
+               <ion-icon item-start>  <img width="15" item-left  src="assets/imgs/left-arrow-angle.png" ></ion-icon>
+            </button>
+         </ion-buttons>
+         <ion-title>Customization</ion-title>
+      </ion-navbar>
+   </ion-header>
+
+   <ion-content no-padding>
+
+      <ion-list no-lines style="padding-top:10px;">
+
+         <ion-item (click)="setBluetoothName()" >
+            <p class="para-item">Bluetooth Name</p>
+            <p style="font-size: 1.5rem; font-weight: 200;color:#4c5c69">{{bluetoothName}}</p>
+            <img width="15"  item-right src="assets/imgs/right-arrow-angle.png">
+         </ion-item>
+
+         <ion-item (click)="moveToConnection()">
+            <p class="para-item">Connection</p>
+            <img  width="15"  item-right src="assets/imgs/right-arrow-angle.png">
+         </ion-item>
+
+         <ion-item (click)="moveToCodec()" >
+            <p class="para-item">Codec</p>
+            <img  width="15"  item-right src="assets/imgs/right-arrow-angle.png">
+         </ion-item>
+
+         <ion-item>
+            <ion-label>LED</ion-label>
+            <ion-toggle [(ngModel)]="ledValue"  (ngModelChange)="sleepMode($event, ledValue)" mode="ios" ></ion-toggle>
+         </ion-item>
+
+         <ion-item>
+            <ion-label>Volume Sync</ion-label>
+            <ion-toggle [(ngModel)]="volumeSyncValue"  (ngModelChange)="volumeSync($event, volumeSyncValue)" mode="ios" ></ion-toggle>
+         </ion-item>
+         
+      </ion-list>
+   </ion-content>

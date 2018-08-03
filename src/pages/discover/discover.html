@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar danger hideBackButton >
+     <button (click)="openLeftMenu()" ion-button menuToggle="left">
+        <ion-icon name="menu"></ion-icon>
+     </button>
+     <ion-title >Discover</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-refresher (ionRefresh)="scanRefresh($event)" >
+     <ion-refresher-content pullingText="Pull to scan" refreshingText="Scanning ...">
+     </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-label class="scan-style">Pull down to scan</ion-label>
+  <p class="type">Linked</p>
+
+  <ion-list   *ngFor="let devInfo of linkedDevInfos" >
+
+     <ion-item *ngIf="isdeviceConnected==1" id="connectedDevice" class='connected-device' #item  >
+        <img  item-left src="assets/icon/LR-Receiver.png" alt='LR-Receiver' >
+        <p class="device-name text-center"  (click)="goToLRReceiver(devInfo)">{{devInfo.name}}</p>
+        <img  item-right   src="assets/icon/right-arrow-angle.png" alt='arrow' (click)='connectOptions(item, devInfo)'>
+     </ion-item>
+
+     <ion-item *ngIf="isdeviceConnected==0"  #item  >
+        <img  item-left src="assets/icon/LR-Receiver.png" alt='LR-Receiver' >
+        <p class="device-name text-center"  (click)="goToLRReceiver(devInfo)">{{devInfo.name}}</p>
+        <img  item-right   src="assets/icon/right-arrow-angle.png" alt='arrow' (click)='connectOptions(item, devInfo)'>
+     </ion-item>
+
+  </ion-list>
+
+  <p class="type">Unlinked</p>
+  <ion-list no-lines>
+    
+     <ion-item  style="border:none;" *ngFor="let devInfo of unlinkDevInfos" #item  >
+        <img item-left (click)="connectDevice(item, devInfo)"  src="assets/icon/LR-Receiver.png" alt='Apt-X-Receiver'  >
+        <p class="device-name text-center" (click)="connectDevice(item, devInfo)">{{devInfo.name}}</p>   
+     </ion-item>
+
+  </ion-list>
+</ion-content>

@@ -1,0 +1,66 @@
+page-audio-effect {
+    .toolbar-background-md{
+        background-color: #37434F;
+    }
+    .toolbar-background-ios{
+        background-color: #37434F;
+    }
+.toolbar-title-md{
+    text-align: center;
+    padding: 0px;
+    margin-top:0px;
+    margin-left: 0px;
+    color:white;
+    font-weight: 400;
+}
+.toolbar-title-ios{
+    text-align: center;
+    padding: 0px;
+    margin-top:0px;
+    margin-left: 0px;
+    color:white;
+    font-weight: 400;
+}
+.content-md{
+    background-color: #37434F; 
+}
+.content-ios{
+    background-color: #37434F;
+}
+.item-ios{
+    background-color:#37434F;
+    height:60px;
+}
+.item-md{
+    background-color:#37434F;
+    height:60px;
+
+}
+.card-md {
+    background: #37434f;
+}
+.label {
+    color: white;
+}
+.list-md .item-block .item-inner {
+    border-bottom: 1px solid #3c4955;
+}
+audio, canvas, progress, video {
+    width:95% ! important;
+    height:55% ! important
+}
+// .list-ios[no-lines] ion-list-header, 
+// .list-ios[no-lines] ion-item-options,
+//  .list-ios[no-lines] .item, .list-ios[no-lines]
+//   .item .item-inner {
+//   //  border-bottom: 0.1px solid rgb(35, 35, 36); 
+//   border-bottom: 0.1px solid #4c5c69 ;
+// }
+// .list-md[no-lines] ion-list-header, 
+// .list-md[no-lines] ion-item-options,
+//  .list-md[no-lines] .item, .list-md[no-lines]
+//   .item .item-inner {
+//    // border-bottom: 0.1px solid rgb(35, 35, 36); 
+//     border-bottom: 0.1px solid #4c5c69 ;
+// }
+}
